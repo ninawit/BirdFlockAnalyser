@@ -1,0 +1,145 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fff66ac056c, pid=3217, tid=0x0000000000000c03
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_121-b13) (build 1.8.0_121-b13)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.121-b13 mixed mode bsd-amd64 compressed oops)
+# Problematic frame:
+# C  [libobjc.A.dylib+0x656c]  objc_retain+0x1c
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x000007f9d1237d00
+
+Registers:
+RAX=0x000007f9d1237ce0, RBX=0x00007f9d1237d6d0, RCX=0x00007f9d12376ed0, RDX=0x00007f9d1237d6d0
+RSP=0x000070000fc9e310, RBP=0x000070000fc9e310, RSI=0x00007fff59a7283e, RDI=0x00007f9d1237d6d0
+R8 =0x000000000000007f, R9 =0x00007f9d0fce55b0, R10=0x00007fff983d48b0, R11=0x00007f9d0feea530
+R12=0x00007fff66ac0550, R13=0x00007f9d1237d6d0, R14=0x00007f9d12376ed0, R15=0x00007f9d0fce55b0
+RIP=0x00007fff66ac056c, EFLAGS=0x0000000000010202, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x000070000fc9e310)
+0x000070000fc9e310:   000070000fc9e380 00007fff59a518b3
+0x000070000fc9e320:   0000000000000018 00007fff66ac2630
+0x000070000fc9e330:   00007f9d1237d6d0 00007f9d0fce55b0
+0x000070000fc9e340:   00007fff93e71090 00007f9d1237d6d0
+0x000070000fc9e350:   022e4e97c1ca006f 00007fff66ac0680
+0x000070000fc9e360:   00007f9d0fce55d8 00007f9d1237d6d0
+0x000070000fc9e370:   00007f9d12376ed0 00007f9d0fce55b0
+0x000070000fc9e380:   000070000fc9e3c0 00007fff59a514fc
+0x000070000fc9e390:   00007fff983d4888 00007f9d12376420
+0x000070000fc9e3a0:   00007f9d1237bf50 00007f9d0fce55b0
+0x000070000fc9e3b0:   0000000000000001 00007f9d1234b2b0
+0x000070000fc9e3c0:   000070000fc9e570 00007fff59a50211
+0x000070000fc9e3d0:   0000000000000000 000070000fc9e3d0
+0x000070000fc9e3e0:   0000003032000000 00007fff59a6a835
+0x000070000fc9e3f0:   00007fff59a6a84b 0000000000000000
+0x000070000fc9e400:   3ff0000000000000 00007f9d0fcf0310
+0x000070000fc9e410:   00007f9d12346030 00007f9d0fcf0390
+0x000070000fc9e420:   00007f9d12376ed0 00007f9d0fce55b0
+0x000070000fc9e430:   00007f9d1234b2b0 00007fff59a73cb9
+0x000070000fc9e440:   000070000fc9e4a0 00007fff66ac1a03
+0x000070000fc9e450:   00007fff983d4910 0000000000000000
+0x000070000fc9e460:   00007f9d1234b2b0 00000000983d4900
+0x000070000fc9e470:   00007fff983d4900 00007f9d1234b2b0
+0x000070000fc9e480:   000070000fc9e6c0 0000000004000002
+0x000070000fc9e490:   00007f9d1237bf50 00007f9d1234b2b0
+0x000070000fc9e4a0:   000070000fc9e570 00007fff66ac1114
+0x000070000fc9e4b0:   00007f9d1237bf50 0000000000000000
+0x000070000fc9e4c0:   0000000000000000 00007f9d1237bf50
+0x000070000fc9e4d0:   00007fff59a73cb9 00007f9d1234b2b0
+0x000070000fc9e4e0:   2f2119fc5d0de957 d636618322891bf9
+0x000070000fc9e4f0:   f917787f7f84f2ae 3ff0000000000000
+0x000070000fc9e500:   4030000000000000 4030000000000000 
+
+Instructions: (pc=0x00007fff66ac056c)
+0x00007fff66ac054c:   90 90 90 90 55 48 89 e5 48 85 ff 74 3b 40 f6 c7
+0x00007fff66ac055c:   01 75 37 48 b8 f8 ff ff ff ff 7f 00 00 48 23 07
+0x00007fff66ac056c:   f6 40 20 04 74 29 48 b9 00 00 00 00 00 00 00 01
+0x00007fff66ac057c:   48 8b 07 a8 01 74 28 48 89 c2 48 01 ca 72 26 f0 
+
+Register to memory mapping:
+
+RAX=0x000007f9d1237ce0 is an unknown value
+RBX=0x00007f9d1237d6d0 is an unknown value
+RCX=0x00007f9d12376ed0 is an unknown value
+RDX=0x00007f9d1237d6d0 is an unknown value
+RSP=0x000070000fc9e310 is an unknown value
+RBP=0x000070000fc9e310 is an unknown value
+RSI=0x00007fff59a7283e: CGImageWithData:iconIndexInfo:.blueColorTable.7+0x1aae in /System/Library/PrivateFrameworks/IconServices.framework/Versions/A/IconServices at 0x00007fff59a4c000
+RDI=0x00007f9d1237d6d0 is an unknown value
+R8 =0x000000000000007f is an unknown value
+R9 =0x00007f9d0fce55b0 is an unknown value
+R10=0x00007fff983d48b0: OBJC_METACLASS_$_ISStoreUnit+0 in /System/Library/PrivateFrameworks/IconServices.framework/Versions/A/IconServices at 0x00007fff59a4c000
+R11=0x00007f9d0feea530 is an unknown value
+R12=0x00007fff66ac0550: objc_retain+0 in /usr/lib/libobjc.A.dylib at 0x00007fff66aba000
+R13=0x00007f9d1237d6d0 is an unknown value
+R14=0x00007f9d12376ed0 is an unknown value
+R15=0x00007f9d0fce55b0 is an unknown value
+
+
+Stack: [0x000070000fc1f000,0x000070000fc9f000],  sp=0x000070000fc9e310,  free space=508k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libobjc.A.dylib+0x656c]  objc_retain+0x1c
+C  [IconServices+0x58b3]  +[ISStoreUnit storeUnitWithStoreURL:UUID:]+0x32
+C  [IconServices+0x54fc]  -[ISStore unitForUUID:]+0xab
+C  [IconServices+0x4211]  -[ISIconCache _cachedImageForGenerationRequest:]+0x48d
+C  [IconServices+0x3c51]  -[ISIconCache imageWithRequest:]+0x4d
+C  [IconServices+0x6407]  _ISCreateCGImageFromBindingWithSizeScaleAndOptions+0xb1
+C  [DesktopServicesPriv+0xefdf1]  TFSInfo::CopyIconRefForSizes(__CFURL const*, unsigned int, OpaqueIconRef*&, bool)+0x103
+C  [DesktopServicesPriv+0x26438]  TFSInfo::CopyIconRef(NodeRequestOptions, OpaqueIconRef*&, bool&) const+0x656
+C  [DesktopServicesPriv+0x25d10]  TNode::CopyIconRef(NodeRequestOptions, OpaqueIconRef*&) const+0x5e
+C  [DesktopServicesPriv+0x1c944]  TNode::ResolveSharedFileListAliasIfNeeded()+0x1ba
+C  [DesktopServicesPriv+0x61292]  ResolveSFLItems(std::__1::shared_ptr<std::__1::vector<TNodePtr, std::__1::allocator<TNodePtr> > > const&, TNodePtr const&)+0x114
+C  [DesktopServicesPriv+0x61738]  invocation function for block in TNode::SynchronizeChildren(NodeRequestOptions, TNodeEventPtrs&)+0x2a
+C  [DesktopServicesPriv+0x123f1]  ExceptionSafeBlock(void () block_pointer)+0x9
+C  [DesktopServicesPriv+0x616a0]  invocation function for block in TNode::SynchronizeChildren(NodeRequestOptions, TNodeEventPtrs&)+0x58
+C  [libdispatch.dylib+0x25f8]  _dispatch_call_block_and_release+0xc
+C  [libdispatch.dylib+0x363d]  _dispatch_client_callout+0x8
+C  [libdispatch.dylib+0x98e0]  _dispatch_lane_serial_drain+0x25a
+C  [libdispatch.dylib+0xa396]  _dispatch_lane_invoke+0x181
+C  [libdispatch.dylib+0x126ed]  _dispatch_workloop_worker_thread+0x256
+C  [libsystem_pthread.dylib+0x2611]  _pthread_wqthread+0x1a5
+C  [libsystem_pthread.dylib+0x23fd]  start_wqthread+0xd
+
+
+---------------  P R O C E S S  ---------------
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 38400K, used 33112K [0x0000000795580000, 0x0000000798000000, 0x00000007c0000000)
+  eden space 33280K, 99% used [0x0000000795580000,0x00000007975d6280,0x0000000797600000)
+  from space 5120K, 0% used [0x0000000797b00000,0x0000000797b00000,0x0000000798000000)
+  to   space 5120K, 0% used [0x0000000797600000,0x0000000797600000,0x0000000797b00000)
+ ParOldGen       total 87552K, used 0K [0x0000000740000000, 0x0000000745580000, 0x0000000795580000)
+  object space 87552K, 0% used [0x0000000740000000,0x0000000740000000,0x0000000745580000)
+ Metaspace       used 14587K, capacity 15138K, committed 15232K, reserved 1062912K
+  class space    used 1956K, capacity 2107K, committed 2176K, reserved 1048576K
+
+Card table byte_map: [0x0000000102b62000,0x0000000102f63000] byte_map_base: 0x00000000ff162000
+
+Marking Bits: (ParMarkBitMap*) 0x00000001020f0d30
+ Begin Bits: [0x000000010320e000, 0x000000010520e000)
+ End Bits:   [0x000000010520e000, 0x000000010720e000)
+
+Polling page: 0x0000000100efb000
+
+CodeCache: size=245760Kb used=3902Kb max_used=3902Kb free=241857Kb
+ bounds [0x000000010aecf000, 0x000000010b2af000, 0x0000000119ecf000]
+ total_blobs=1836 nmethods=1218 adapters=531
+ compilation: enabled
+
+Compilation events (10 events):

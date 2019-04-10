@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #262e3a#262e3a;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.WelcomeController">
+   <center>
+      <Button fx:id="welcomeButton" mnemonicParsing="false" onAction="#welcomButton" style="-fx-background-color: #262e3a#262e3a; -fx-border-color: #afbbce#afbbce; -fx-border-radius: 2em;" text="BIRD FLOCK ANALYSER SYSTEM" textFill="#afbbce" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </center>
+</BorderPane>

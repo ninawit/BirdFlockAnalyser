@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BlackAndWhiteImgController">
+   <left>
+      <VBox prefHeight="422.0" prefWidth="102.0" style="-fx-background-color: #262e3a#262e3a #262e3a#262e3a;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="bnwButton" mnemonicParsing="false" onAction="#changeToBlackAndWhite" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #262e3a#262e3a #262e3a#262e3a; -fx-border-color: #afbbce#afbbce #afbbce#afbbce;" text="B&amp;W" textFill="#afbbce">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin></Button>
+         </children>
+      </VBox>
+   </left>
+   <bottom>
+      <HBox prefHeight="37.0" prefWidth="600.0" style="-fx-background-color: #262e3a#262e3a;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <HBox prefHeight="41.0" prefWidth="600.0" style="-fx-background-color: #262e3a#262e3a;" BorderPane.alignment="CENTER" />
+   </top>
+   <right>
+      <VBox prefHeight="322.0" prefWidth="112.0" style="-fx-background-color: #262e3a#262e3a;" BorderPane.alignment="CENTER">
+         <children>
+            <Slider fx:id="slider1" blockIncrement="100.0" majorTickUnit="5.0" max="100.0" minorTickCount="1" onMouseReleased="#onSliderChanged" orientation="VERTICAL" prefHeight="401.0" prefWidth="16.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="5.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="50.0" top="10.0" />
+               </VBox.margin>
+            </Slider>
+         </children></VBox>
+   </right>
+   <center>
+      <ImageView fx:id="imageView" fitHeight="424.0" fitWidth="596.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: #afbbce#afbbce;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
